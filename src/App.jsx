@@ -9,8 +9,8 @@ import {
 } from "lucide-react";
 
 const invitation = {
-  groom: "Jewel Abraham ",
-  bride: "Merin",
+  groom: "Dr. Jewel",
+  bride: "Dr. Merin",
   shortGroom: "Jewel",
   shortBride: "Merin",
   eventName: "Engagement",
@@ -23,7 +23,7 @@ const invitation = {
   message: "Join us as we tie the knot and seek the blessings of almighty",
   parents: {
     groom: "Mr. Abraham K Thomas & Mrs. Elsa Abraham ,Kurichimala House",
-    bride: "Dr. Vino joseph & Mrs. Biji Rose Mathew, Oonnukallamattathil House",
+    bride: "Mr. Vino Joseph & Mrs. Biji Rose Mathew, Oonnukallamattathil House",
   },
 };
 
