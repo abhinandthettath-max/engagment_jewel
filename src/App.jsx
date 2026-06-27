@@ -23,7 +23,7 @@ const invitation = {
   message: "Join us as we tie the knot and seek the blessings of almighty",
   parents: {
     groom: "Mr. Abraham K Thomas & Mrs. Elsa Abraham ,Kurichimala House",
-    bride: "Mr. Vino Joseph & Mrs. Biji Rose Mathew, Oonnukallamattathil House",
+    bride: "Mr. Vino Joseph & Mrs. Biji Rose Mathew Oonnukallamattathil House",
   },
 };
 
