@@ -38,27 +38,7 @@ const events = [
     region: "Kerala, India",
     map: "https://maps.app.goo.gl/MRKU11URgHhP5QiU6?g_st=iw",
   },
-  {
-    title: "Wedding Ceremony",
-    image: "/assets/hero.jpeg",
-    date: "Sunday, August 30, 2026",
-    time: "10:30 AM",
-    venue: "St. Simon's Jacobite Syrian Orthodox Church, Velloor",
-    modalVenue: "St. Simon's Jacobite Syrian Orthodox Church, Velloor",
-    region: "Velloor, Kerala",
-    map: "https://maps.app.goo.gl/QofZw1hVm1RzJtxk8?g_st=ic",
-  },
-  {
-    title: "Wedding Reception",
-    image: "/assets/reception.jpeg",
-    date: "Sunday, August 30, 2026",
-    time: "01:00 PM",
-    venue: "St. John's Orthodox Cathedral Pampady",
-    note: "Following the wedding ceremony",
-    modalVenue: "St. John's Orthodox Cathedral Pampady",
-    region: "Pampady, Kerala",
-    map: "https://maps.app.goo.gl/NsQsYprEr272cKEA6",
-  },
+
 ];
 
 const gallery = [
