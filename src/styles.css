@@ -406,8 +406,11 @@ img {
 }
 
 .ampersand {
+  justify-self: center;
   color: var(--gold);
   font-size: clamp(4rem, 8vw, 6rem);
+  line-height: 1;
+  text-align: center;
 }
 
 .event-list {
@@ -583,6 +586,29 @@ img {
   margin: 0;
   color: var(--gold);
   font-size: clamp(2.9rem, 6vw, 4.5rem);
+}
+
+.instagram-credit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+  color: var(--gold);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+
+.instagram-credit:hover {
+  color: var(--gold-deep);
+}
+
+.instagram-credit svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
 }
 
 .floating-controls {
