@@ -28,11 +28,6 @@ const invitation = {
   },
 };
 
-const companyInstagram = {
-  handle: "digitalaffairco",
-  url: "https://www.instagram.com/digitalaffairco?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-};
-
 const events = [
   {
     title: "Engagement Ceremony",
@@ -55,6 +50,12 @@ const gallery = [
   "/assets/gallery-5.jpeg",
   "/assets/gallery-6.jpeg",
 ];
+
+const companyInstagram = {
+  handle: "digitalaffairco",
+  url: "https://www.instagram.com/digitalaffairco?utm_source=qr",
+  logo: "/assets/digital-affair-logo.jpeg",
+};
 
 function useCountdown(target) {
   const [remaining, setRemaining] = useState(() => getRemaining(target));
@@ -362,22 +363,13 @@ function ThankYou() {
         </p>
         <Heart className="heart" fill="currentColor" />
         <h3>Jewel & Merin</h3>
-        <a
-          className="instagram-credit"
-          href={companyInstagram.url}
-          target="_blank"
-          rel="noreferrer"
-          aria-label={`Visit ${companyInstagram.handle} on Instagram`}
-        >
-          <Instagram aria-hidden="true" />
-          <span>@{companyInstagram.handle}</span>
-        </a>
+
       </div>
     </section>
   );
 }
 
-function FloatingControls({ musicOn, onMusic, onLocations }) {
+function FloatingControls({ musicOn, onMusic, onDesigns, onLocations }) {
   return (
     <div className="floating-controls" aria-label="Invitation controls">
       <button
@@ -393,14 +385,29 @@ function FloatingControls({ musicOn, onMusic, onLocations }) {
           <i />
         </span>
       </button>
-      <button
-        className="round-control"
-        type="button"
-        onClick={onLocations}
-        aria-label="Open event locations"
-      >
-        <MapPin />
-      </button>
+      <div className="control-stack">
+        <button
+          className="round-control"
+          type="button"
+          onClick={onDesigns}
+          aria-label="Open Digital Affair designs"
+        >
+          <img
+            className="brand-control-icon"
+            src={companyInstagram.logo}
+            alt=""
+            aria-hidden="true"
+          />
+        </button>
+        <button
+          className="round-control"
+          type="button"
+          onClick={onLocations}
+          aria-label="Open event locations"
+        >
+          <MapPin />
+        </button>
+      </div>
     </div>
   );
 }

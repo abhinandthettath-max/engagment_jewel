@@ -407,10 +407,10 @@ img {
 
 .ampersand {
   justify-self: center;
+  text-align: center;
   color: var(--gold);
   font-size: clamp(4rem, 8vw, 6rem);
   line-height: 1;
-  text-align: center;
 }
 
 .event-list {
@@ -588,27 +588,34 @@ img {
   font-size: clamp(2.9rem, 6vw, 4.5rem);
 }
 
-.instagram-credit {
+.company-credit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 28px;
+  color: var(--muted);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1rem;
+}
+
+.company-credit a {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 24px;
+  gap: 7px;
   color: var(--gold);
-  font-family: "Cormorant Garamond", Georgia, serif;
   font-weight: 600;
-  letter-spacing: 0.08em;
   text-decoration: none;
 }
 
-.instagram-credit:hover {
+.company-credit a:hover {
   color: var(--gold-deep);
 }
 
-.instagram-credit svg {
-  width: 18px;
-  height: 18px;
-  flex: 0 0 auto;
+.company-credit svg {
+  width: 17px;
+  height: 17px;
 }
 
 .floating-controls {
@@ -616,8 +623,15 @@ img {
   inset: auto 30px 30px;
   z-index: 20;
   display: flex;
+  align-items: end;
   justify-content: space-between;
   pointer-events: none;
+}
+
+.control-stack {
+  display: grid;
+  gap: 12px;
+  pointer-events: auto;
 }
 
 .round-control {
@@ -637,6 +651,15 @@ img {
 .round-control svg {
   width: 24px;
   height: 24px;
+}
+
+.brand-control-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: inset 0 0 0 1px rgba(201, 173, 69, 0.22);
 }
 
 .equalizer {
@@ -794,6 +817,46 @@ img {
   text-transform: uppercase;
 }
 
+.design-sheet {
+  right: 30px;
+  bottom: 176px;
+  left: auto;
+  width: min(390px, calc(100% - 60px));
+  max-height: calc(100svh - 212px);
+  border-radius: 18px;
+  transform: translateY(calc(100% + 212px));
+}
+
+.design-link {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 16px;
+  align-items: center;
+  min-height: 92px;
+  padding: 16px;
+  border-radius: 8px;
+  color: var(--gold);
+  background: #fff;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.design-link img {
+  width: 58px;
+  height: 58px;
+  border: 1px solid rgba(201, 173, 69, 0.2);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.design-link:hover {
+  color: var(--gold-deep);
+}
+
 [data-reveal] {
   opacity: 0;
   transform: translateY(28px);
@@ -820,17 +883,20 @@ img {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
 
 @keyframes arrowDrop {
+
   0%,
   100% {
     opacity: 0.25;
     transform: translateY(-4px) rotate(45deg);
   }
+
   50% {
     opacity: 1;
     transform: translateY(4px) rotate(45deg);
@@ -838,10 +904,12 @@ img {
 }
 
 @keyframes equalize {
+
   0%,
   100% {
     transform: scaleY(0.35);
   }
+
   45% {
     transform: scaleY(1);
   }
@@ -919,6 +987,18 @@ img {
   .round-control {
     width: 56px;
     height: 56px;
+  }
+
+  .brand-control-icon {
+    width: 41px;
+    height: 41px;
+  }
+
+  .design-sheet {
+    right: 18px;
+    bottom: 164px;
+    left: 18px;
+    width: auto;
   }
 
   .location-sheet header,
